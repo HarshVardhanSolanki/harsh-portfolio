@@ -1,84 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harsh Vardhan Solanki | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Vardhan Solanki | Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Harsh Vardhan Solanki, B.Tech Data Science student at BIRT Bhopal, Campus Ambassador at MyGov India.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">HS</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<section id="home" class="hero">
-  <div class="hero-content reveal">
-    <div class="hero-left">
-      <img src="assets/profile.jpg" alt="Harsh Vardhan">
+    <div class="gradient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
     </div>
-    <div class="hero-right">
-      <h1>Harsh Vardhan <span>Solanki</span></h1>
-      <h3>B.Tech Data Science Student | Campus Ambassador</h3>
-      <p>BIRT Bhopal | MyGov India | Physics Wallah</p>
-      <a href="#" class="btn">Download Resume</a>
-    </div>
-  </div>
-</section>
 
-<section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <p>
-    Hello, I'm Harsh Vardhan Solanki, a B.Tech Data Science student at
-    Bansal Institute of Research and Technology (BIRT), Bhopal.
-    Campus Ambassador for MyGov India and Physics Wallah.
-    Passionate about programming, networking and communication.
-  </p>
-</section>
+    <nav class="navbar">
+        <div class="logo">HVS<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-<section id="skills" class="section reveal">
-  <h2>My Skills</h2>
-  <div class="card-container">
-    <div class="card">Python</div>
-    <div class="card">C Programming</div>
-    <div class="card">HTML</div>
-    <div class="card">JavaScript</div>
-    <div class="card">Data Science</div>
-  </div>
-</section>
+    <section id="home" class="hero">
+        <div class="hero-content hidden">
+            <h1>Harsh Vardhan <span class="gradient-text">Solanki</span></h1>
+            <h3>B.Tech Data Science Student | Campus Ambassador</h3>
+            <p class="subtext">BIRT Bhopal | MyGov India | Physics Wallah</p>
+            <p class="bio">Passionate about programming, networking, and communication. Building analytical and problem-solving skills to drive data-powered solutions.</p>
+            <div class="cta-group">
+                <a href="#" class="btn btn-primary">Download Resume</a>
+                <a href="#contact" class="btn btn-secondary">Connect With Me</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/harshvsolanki/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/HarshVardhanSolanki" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/HarshVardhanSolanki/" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="mailto:hvs@harshvardhansolanki.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-image hidden">
+            <div class="img-wrapper">
+                <img src="profile.jpg" alt="Harsh Vardhan Solanki">
+            </div>
+        </div>
+    </section>
 
-<section id="certificates" class="section reveal">
-  <h2>Certificates</h2>
-  <div class="card-container">
-    <div class="card">Python Programming</div>
-    <div class="card">C Programming</div>
-    <div class="card">HTML & CSS</div>
-    <div class="card">JavaScript</div>
-  </div>
-</section>
+    <section id="about" class="section">
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="glass-card hidden">
+            <p>I am Harsh Vardhan Solanki, currently pursuing B.Tech in Data Science (2025–2029) at <strong>Bansal Institute of Research and Technology, Bhopal</strong>.</p>
+            <br>
+            <p>Beyond academics, I actively promote civic engagement as a <strong>Campus Ambassador for MyGov India</strong> and focus on community building with <strong>Physics Wallah</strong>. I am eager to apply my skills in Statistical Modeling, ML Foundations, and Data Analysis to real-world challenges.</p>
+        </div>
+    </section>
 
-<section id="contact" class="section reveal">
-  <h2>Connect With Me</h2>
-  <p>LinkedIn: linkedin.com/in/harshvsolanki</p>
-  <p>GitHub: github.com/HarshVardhanSolanki</p>
-  <p>Email: hvs@harshvardhansolanki.com</p>
-</section>
+    <section id="skills" class="section">
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="grid-container">
+            <div class="skill-card hidden">
+                <i class="fab fa-python" style="color: #FFD43B;"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-c" style="color: #00599C;"></i>
+                <h3>C Programming</h3>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-database" style="color: #FF6B9A;"></i>
+                <h3>Data Science</h3>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-html5" style="color: #E34F26;"></i>
+                <h3>HTML & CSS</h3>
+            </div>
+             <div class="skill-card hidden">
+                <i class="fas fa-spider" style="color: #fff;"></i>
+                <h3>Web Scraping</h3>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  © 2026 harshvardhansolanki.com | All Rights Reserved.
-</footer>
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card glass-card hidden">
+                <div class="project-header">
+                    <h3>Indian Passport Status Fetcher</h3>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Web Scraping</span>
+                    </div>
+                </div>
+                <p>Developed a Python script to automate fetching passport application status from the official Passport India website. Demonstrates automation and data extraction techniques.</p>
+                <div class="project-links">
+                    <a href="https://github.com/HarshVardhanSolanki" target="_blank" class="link-btn"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section split-section">
+        <div class="column">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item hidden">
+                    <h4>Campus Ambassador</h4>
+                    <span>MyGov India | Oct 2025 - Present</span>
+                    <p>Promoting civic engagement, organizing awareness campaigns, and facilitating communication between students and the organization.</p>
+                </div>
+                <div class="timeline-item hidden">
+                    <h4>Campus Ambassador</h4>
+                    <span>Physics Wallah</span>
+                    <p>Focusing on networking, public interaction, and community building within the campus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item hidden">
+                    <h4>B.Tech - Data Science</h4>
+                    <span>Bansal Institute of Research and Technology</span>
+                    <p>2025 - 2029</p>
+                </div>
+                <div class="timeline-item hidden">
+                    <h4>12th Standard</h4>
+                    <span>Alpine Public School, Khurja</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card hidden">BCGX Data Science Job Simulation</div>
+            <div class="cert-card hidden">C Programming Certificate</div>
+            <div class="cert-card hidden">Python Skill Test</div>
+            <div class="cert-card hidden">HTML, CSS & JS Certificates</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="glass-card contact-form-wrapper hidden">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2026 Harsh Vardhan Solanki. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
