@@ -1,18 +1,16 @@
-const username = "HarshVardhanSolanki";
-const repoContainer = document.getElementById("repo-container");
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
 
-fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
-.then(res => res.json())
-.then(data => {
-    data.slice(0, 6).forEach(repo => {
-        const card = document.createElement("div");
-        card.className = "card";
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 100;
 
-        card.innerHTML = `
-            <h3>${repo.name}</h3>
-            <p>${repo.description || "Project repository"}</p>
-            <a href="${repo.html_url}" target="_blank">View Code</a>
-        `;
-        repoContainer.appendChild(card);
-    });
-});
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
